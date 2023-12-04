@@ -39,7 +39,7 @@ def maze_coordinates(rects):
     for row in range(maze_len):
         r = []
         for col in range(maze_len):
-            if rects[row*10 + col][1] == 1:
+            if rects[row*maze_len + col][1] == 1:
                 r.append(".")
                 coordinates.append(f"({row},{col})")
             else:
